@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * Description: Assigns a random number to the variable n and prints the last digit of n
+ * Description: Assigns a random number prints the last digit of n
  * and whether it is greater than 5, is 0, or is less than 6 and not 0.
  *
  * Return: Always 0 (Success)
@@ -16,7 +16,7 @@ int main(void)
 	int last_digit;
 
 	srand(time(0)); /* Seed the random number generator */
-	n = rand() - RAND_MAX / 2; /* Generate a random number between -RAND_MAX/2 and RAND_MAX/2 */
+	n = rand() - RAND_MAX / 2; /* -RAND_MAX/2 and RAND_MAX/2 */
 	last_digit = n % 10; /* Calculate the last digit of n */
 
 	printf("Last digit of %d is %d and is ", n, last_digit);
