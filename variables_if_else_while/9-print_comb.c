@@ -7,12 +7,19 @@
 void new(void)
 {
 	int i = 0;
-
+	char c;
+	
 	for (; i < 10; i++)
 	{
-		printf("%d, ", i);
+		if (i > 0)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		c = '0' + i;
+		putchar(c);
 	}
-	printf("\n"); /* To add a newline after the loop */
+	putchar('\n'); /* To add a newline after the loop */
 }
 
 int main(void)
