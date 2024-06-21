@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * _putchar - A custom putchar function that outputs a character to stdout.
