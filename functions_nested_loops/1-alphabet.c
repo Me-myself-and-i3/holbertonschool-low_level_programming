@@ -5,13 +5,13 @@
  */
 void print_alphabet(void)
 {
-    char letter;
+	char letter;
 
-    for (letter = 'a'; letter <= 'z'; letter++)
-    {
-        putchar(letter);
-    }
-    putchar('\n');
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		putchar(letter);
+	}
+	putchar('\n');
 }
 
 /**
@@ -21,7 +21,7 @@ void print_alphabet(void)
  */
 int main(void)
 {
-    print_alphabet();
+	print_alphabet();
 
-    return (0);
+	return (0);
 }
