@@ -1,44 +1,18 @@
-#include <main.h>
+#include "main.h"
 
 /**
- * _putchar - A custom putchar function that outputs a character to stdout.
- * This is a placeholder for the real _putchar function.
- *
- * @c: The character to print.
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-    return putchar(c);
-}
-
-/**
- * print_alphabet_x10 - Prints the alphabet 10 times in lowercase.
+ * print_alphabet_x10 - Prints the alphabet 10 times, in lowercase.
  */
 void print_alphabet_x10(void)
 {
-    char letter;
-    int i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
+	int i, j;
 
-    for (i = 0; i < 10; i++)
-    {
-        for (letter = 'a'; letter <= 'z'; letter++)
-        {
-            _putchar(letter);
-        }
-        _putchar('\n');
-    }
-}
-
-/**
- * main - Entry point of the program.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    print_alphabet_x10();
-    return (0);
+	for (i = 0; i < 10; i++)
+	{
+		for (j = 0; alphabet[j] != '\0'; j++)
+		{
+			_putchar(alphabet[j]);
+		}
+	}
 }
