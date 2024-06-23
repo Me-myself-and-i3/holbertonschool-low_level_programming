@@ -18,18 +18,22 @@ void times_table(void)
 		{
 			product = i * j;
 
-			/* Print the product followed by ", " except for the last column */
-			if (product < 10)
-				_putchar(' ');
+			/* Print the product with proper formatting */
+			if (j == 0)
+			{
+				_putchar((product % 10) + '0');
+			}
 			else
-				_putchar((product / 10) + '0');
-
-			_putchar((product % 10) + '0');
-
-			if (j < 9)
 			{
 				_putchar(',');
 				_putchar(' ');
+
+				if (product < 10)
+					_putchar(' ');
+				else
+					_putchar((product / 10) + '0');
+
+				_putchar((product % 10) + '0');
 			}
 		}
 		_putchar('\n');
