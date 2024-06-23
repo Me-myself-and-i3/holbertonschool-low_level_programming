@@ -15,7 +15,7 @@ void times_table(void)
 
 			/* Print the product followed by ", " except for the last column */
 			if (product < 10)
-				_putchar(' '); /* Add extra space for alignment */
+				_putchar(' ');
 			else
 				_putchar((product / 10) + '0');
 
@@ -27,6 +27,7 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
+		_putchar('$'); /* Append '$' at the end of each line */
 		_putchar('\n');
 	}
 }

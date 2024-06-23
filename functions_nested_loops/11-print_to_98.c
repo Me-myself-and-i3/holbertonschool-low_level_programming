@@ -5,7 +5,7 @@
  * print_to_98 - prints all natural numbers from n to 98
  * @n: starting number
  *
- * Description: Prints all numbers from n to 98, separated by commas and spaces,
+ * Description: Prints al from n to 98, separated by commas and spaces,
  *              ending with a newline.
  */
 void print_to_98(int n)
