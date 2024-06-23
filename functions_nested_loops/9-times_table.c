@@ -2,6 +2,11 @@
 
 /**
  * times_table - prints the 9 times table, starting with 0
+ *
+ * Description:
+ * This function prints the multiplication table from 0 to 9.
+ * Each row is printed with numbers separated by commas and spaces,
+ * ensuring that each line aligns correctly.
  */
 void times_table(void)
 {
@@ -27,7 +32,6 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
-		_putchar('$'); /* Append '$' at the end of each line */
 		_putchar('\n');
 	}
 }
