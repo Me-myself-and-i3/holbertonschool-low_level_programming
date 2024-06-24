@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* _isalpha - Checks if a character is an alphabetic character.
-* @c: The character to check.
-*
-* Description: This function checks if the given character `c`
-* is an alphabetic character (either lowercase or uppercase).
-*
-* Return: 1 if the character is a letter, lowercase or uppercase, 0 otherwise.
-*/
+ * _isdigit - Checks if a character is a digit (0 through 9).
+ * @c: The character to check.
+ *
+ * Description: This function checks if the given character `c`
+ * is a digit (0 through 9).
+ *
+ * Return: 1 if the character is a digit, 0 otherwise.
+ */
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
