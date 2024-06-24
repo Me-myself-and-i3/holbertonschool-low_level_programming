@@ -8,16 +8,16 @@
 * Return: void
 */
 
-void print_alphabet_x10(void)
+void more_numbers(void)
 {
 	int i;
-	int J;
+	int j;
 
 	for (i = 0; i < 10; i++)
 	{
-		for (j = 0; J <= 14; J++)
+		for (j = 0; j <= 14; j++)
 		{
-		_putchar(c);
+		_putchar(j);
 		}
 	_putchar('\n');
 	}
