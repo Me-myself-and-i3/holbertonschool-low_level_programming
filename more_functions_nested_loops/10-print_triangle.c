@@ -1,4 +1,4 @@
-#include <stdio.h
+#include <stdio.h>
 
 /**
  * putchar - writes the character c to stdout
