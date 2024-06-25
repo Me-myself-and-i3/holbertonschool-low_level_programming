@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * putchar - writes the character c to stdout
@@ -18,7 +18,7 @@ void print_triangle(int size)
 
     if (size <= 0)
     {
-        putchar('\n');
+        _putchar('\n');
         return;
     }
 
@@ -30,8 +30,8 @@ void print_triangle(int size)
         }
         for (k = 0; k < i; k++)
         {
-            putchar('#');
+            _putchar('#');
         }
-        putchar('\n');
+        _putchar('\n');
     }
 }
