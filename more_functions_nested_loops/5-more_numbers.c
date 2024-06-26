@@ -1,24 +1,23 @@
 #include "main.h"
 
 /**
-* print_alphabet_x10 - Prints the alphabet in loxercase followed by a new line.
-* main - check the code
-* Description: print alphabet  x 10 with for
-* print_alphabet_x10 - Prints 10x alphabet in lowercase followed by a new line.
-* Return: void
+* more_numbers - Prints numbers from 0 to 14, ten times in a single line.
+* Each set of numbers is followed by a newline.
+* _putchar can use three times in your code
+* SD
 */
-
 void more_numbers(void)
 {
-	int i;
-	int j;
+	int i, j;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++) /* 10 lignes*/
 	{
-		for (j = 0; j <= 14; j++)
+		for (j = 0; j <= 14; j++) /*chiffre 0 a 14*/
 		{
-		_putchar(j);
+			if (j > 9) /*si chiffre superieur a 9 = 10 a 14*/
+				_putchar ((j / 10) + '0'); /* j/10 */
+			_putchar ((j % 10) + '0'); /* else j%10 pour j<=9*/
 		}
-	_putchar('\n');
+		_putchar ('\n');
 	}
 }
